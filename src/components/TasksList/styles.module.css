@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.header strong {
+  display: flex;
+  align-items: center;
+}
+
+.header strong span:last-child {
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  border-radius: 9999px;
+  padding: 0 .5rem;
+  margin-left: .5rem;
+}
+
+.totalTasks span:first-child {
+  color: var(--blue-300);
+}
+
+.finishedTasks span:first-child {
+  color: var(--purple-300);
+}
+
+.tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.emptyTasks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem 1.5rem;
+  color: var(--gray-300);
+
+  border-radius: 8px;
+  border-top: 1px solid var(--gray-400);
+}
+
+.emptyTasks img {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-bottom: 1rem;
+}

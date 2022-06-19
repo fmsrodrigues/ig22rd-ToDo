@@ -1,0 +1,40 @@
+.form {
+  display: flex;
+  height: 3.375rem;
+}
+
+.form input {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 8px;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+}
+
+.form input:focus {
+  border-color: var(--purple-300);
+}
+
+.form input::placeholder {
+  color: var(--gray-300);
+}
+
+.form button {
+  display: flex;
+  align-items: center;
+  margin-left: .5rem;
+  width: 5.625rem;
+  border: none;
+  background-color: var(--blue-600);
+  border-radius: 8px;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.form button svg {
+  margin-left: .5rem;
+}
+
+.form button:hover {
+  background-color: var(--blue-300);
+}

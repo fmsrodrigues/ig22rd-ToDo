@@ -1,0 +1,98 @@
+.task {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--gray-500);
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+  box-shadow: 0px 2px 8px var(--grey-700);
+}
+
+.task button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task button:first-child {
+  margin-right: .5rem;
+}
+
+.task button:first-child::before {
+  border-radius: 50%;
+}
+
+.checkboxDesactivated {
+  position: relative;
+}
+
+.checkboxDesactivated::before {
+  content: '';
+  height: 0.775rem;
+  width: 0.775rem;
+  border: 2px solid var(--blue-300);
+}
+
+.checkboxDesactivated:hover::before {
+  position: absolute;
+  border-color: var(--blue-600);
+}
+
+.checkboxDesactivated:hover::after {
+  content: '';
+  position: absolute;
+  height: 0.775rem;
+  width: 0.775rem;
+  background-color: transparent;
+  background-color: var(--blue-600);
+  opacity: 0.2;
+}
+
+.checkboxActivated::before {
+  content: '';
+  position: absolute;
+  height: 1.05rem;
+  width: 1.05rem;
+  background-color: var(--purple-600);
+}
+
+.checkboxActivated svg {
+  z-index: 1;
+}
+
+.checkboxActivated div:hover {
+  background-color: var(--purple-300);
+}
+
+.task p {
+  flex: 1;
+}
+
+.finishedTask {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.deleteTask {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--gray-300);
+  margin-left: 1rem;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.deleteTask:hover {
+  background-color: var(--gray-400);
+  color: var(--red-300);
+}
